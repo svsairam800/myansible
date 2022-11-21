@@ -1,0 +1,20 @@
+---
+-Students:
+  - name : abc
+    phoneno: 1234
+    address:
+     street: xyz
+     roadno: 12
+     country: india
+  
+  - name : sai
+    phoneno: 234
+    address: 
+     street: ffg
+     roadno: 34
+     country: india
+     
+
+  
+
+

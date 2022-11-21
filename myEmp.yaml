@@ -1,0 +1,14 @@
+---
+- Employees:
+   - name: sai
+     gender: M
+     age: 84
+     job: SW
+     Address: Shirdi
+   
+   - name: baba
+     gender: M
+     age: 90
+     job: SW
+     Address: 89 block
+
