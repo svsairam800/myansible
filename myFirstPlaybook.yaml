@@ -18,10 +18,10 @@
     yum:
      name: httpd
      state: present
-    when: ansible_os_family=="Red-hat" 
+    when: ansible_os_family=="RedHat" 
 
   - name : i want to start Red-hat
     service:
      name: httpd
      state: started
-    when: ansible_os_family=="Red-hat"      
+    when: ansible_os_family=="RedHat"      
