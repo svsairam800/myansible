@@ -6,3 +6,7 @@
   - name: install webserver
     apt:
      name: apache2
+  - name: i want to copy static file into  ansible nodes
+    copy:
+     src: mystaticfile.txt
+     dest: /home/ubuntu/mystaticfile.txt   
