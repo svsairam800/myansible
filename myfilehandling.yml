@@ -3,6 +3,7 @@
   become: yes
   tasks:
   - include_tasks: myfile.yaml
+
   - name: install webserver
     apt:
      name: apache2
@@ -16,8 +17,8 @@
 
   - name: i want to copy a dynamic file into ansible nodes
     template: 
-     src: mydynamicfile.j2
-     dest: /var/www/html/index.html
+       src:  mydynamicfile.j2
+       dest: /var/www/html/index.html
     notify:  restartwebserver
 
     handlers:
