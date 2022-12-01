@@ -6,13 +6,23 @@
   - name: install webserver
     apt:
      name: apache2
+    notify: restartwebserver
+
   - name: i want to copy static file into  ansible nodes
     copy:
      src: mystaticfile.txt
      dest: /home/ubuntu/mystaticfile.txt 
+    notify: restartwebserver 
 
   - name: i want to copy a dynamic file into ansible nodes
     template: 
      src: mydynamicfile.j2
      dest: /var/www/html/index.html
+    notify:  restartwebserver
+
+  - handlers:
+    -name: restartwebserver
+    service:
+      name: apache2
+      state: restarted   
         
