@@ -1,0 +1,6 @@
+---
+- name: grant ownership on tomcat
+  command: sudo chown -R tomcat:tomcat /opt/tomcat/
+
+- name: give execute permission to user
+  command: sudo chmod -R u+x /opt/tomcat/bin
